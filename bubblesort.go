@@ -24,12 +24,12 @@ func BubbleSort(arr []int) {
 	}
 }
 
-// Swap swaps the contents of a slice at the specified index with the contents at index+1
+// Swap the contents of a slice at the specified index with the contents at index+1
 func Swap(arr []int, i int) {
 	arr[i], arr[i+1] = arr[i+1], arr[i]
 }
 
-// processInput converts the input string to a slice of integers
+// convert the input string to a slice of integers
 func processInput(input string) ([]int, error) {
 	var numbers []int
 
@@ -49,7 +49,6 @@ func processInput(input string) ([]int, error) {
 }
 
 func main() {
-	// Prompt user to enter up to 10 integers
 	fmt.Println("Enter up to 10 integers (separated by spaces):")
 
 	// Use bufio.Scanner to read the entire line - why  is input so 'difficult' in go?
